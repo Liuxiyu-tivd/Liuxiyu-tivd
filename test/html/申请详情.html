@@ -1,0 +1,95 @@
+<!-- 申请详情.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport"
+          content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=1, user-scalable=no"
+          charset="UTF-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/font.css"/>
+    <link rel="stylesheet" href="../css/application_detail.css"/>
+    
+    <title>申请详情</title>
+</head>
+<body>
+	<div class="equipment_box">
+		<p class="equipment">
+			<span class="equipment_title">申请类型：</span>
+			<span class="equipment_content">笔记本电脑</span>
+		</p>
+		<p class="tips_type">
+			<span class="tips_title">费用类型：</span>
+			<span class="tips_desc">长途费</span>
+			<span class="tips_money">金额：</span>
+			<span class="tips_num">100元</span>
+		</p>
+		<p class="tips_type">
+			<span class="tips_title">费用类型：</span>
+			<span class="tips_desc">长途费</span>
+			<span class="tips_money">金额：</span>
+			<span class="tips_num">100元</span>
+		</p>
+		<p class="equipment">
+			<span class="equipment_title">申请日期：</span>
+			<span class="equipment_content">2017-10-10</span>
+		</p>
+		<p class="equipment">
+			<span class="equipment_title">备&nbsp;&nbsp;注：</span>
+			<span class="equipment_content">笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑</span>
+		</p>
+	</div>
+	<p class="Process">审批流程</p>
+	<div class="processBox">
+		<div class="process_item border_bottom" isopen="0" onclick="openOrClose(this)">
+			<span class="green">SOC</span>
+			<span class="green marginleft2">通过</span>
+			<span class="marginleft2">2017-10-10 10:20</span>
+			<img  src="../img/open.png">
+			<p class="advice" style="display:none">
+				<span class="advice_title">审批意见：</span>
+				<span class="advice_content">笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑</span>
+			</p>
+		</div>
+		<div class="process_item" isopen="0" onclick="openOrClose(this)">
+			<span class="red">SOC</span>
+			<span class="red marginleft2">通过</span>
+			<span class="marginleft2">2017-10-10 10:20</span>
+			<img  src="../img/open.png">
+			<p class="advice" style="display:none">
+				<span class="advice_title">审批意见：</span>
+				<span class="advice_content">笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑</span>
+			</p>
+		</div>
+	</div>
+	<div class="project_manager">项目经理</div>
+</body>
+<script src="../js/bridge.js" type="text/javascript"></script>
+<script src="../js/plugins/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="../js/jquery.touch.js" type="text/javascript"></script>
+<script src="../js/common.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(function(){
+		//设备历史点击展开
+		var current = 0;
+		     
+		
+	})
+	function openOrClose(obj){
+
+		    var currentStatus = $(obj).attr('isopen');
+		    if (currentStatus == '0') {
+		        current = 180;
+		        $(obj).find('img')[0].style.transform = 'rotate('+current+'deg)';
+		        $(obj).find('.advice').css('display','block');
+		        $(obj).attr('isopen','1');
+		    }else if(currentStatus == '1'){
+		        current = 0;
+		        $(obj).find('img')[0].style.transform = 'rotate('+current+'deg)';
+		        $(obj).find('.advice').css('display','none');
+		        $(obj).attr('isopen','0');
+		    };
+		    
+		}
+</script>
+</html>

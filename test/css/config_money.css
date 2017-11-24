@@ -1,0 +1,82 @@
+/*config_money.css*/
+/**/
+.page_tips{
+	font-size: 1.17em;
+	color: #758694;
+	line-height:3em;
+	height: 2.5em;
+	padding-left: 1em;
+}
+.config_item {
+	padding: 0 1em;
+	background-color: white;
+}
+.config_item li{
+	float: left;
+	width: 33.33%;
+	font-size: 1.17em;
+	height: 3.21em;
+	padding-left: 1.2em;
+	line-height: 3.21em;
+	
+	background-repeat: no-repeat;
+	background-size: 1em 1em;
+	background-position:left center;
+}
+.config_item li[check=on]{
+	background-image:url(../img/Amount_type_choice.png);
+}
+.config_item li[check=off]{
+	background-image:url(../img/Amount_type_nochoice.png);
+}
+.chargeDetail_list li {
+	background-color: white;
+	padding-left: 1em;
+}
+.chargeDetail_list li div{
+	padding-right: 1em;
+	font-size: 1.17em;
+	height: 3.2em;
+	color: #6d6e70;
+	line-height: 3.2em;
+	
+}
+.chargeDetail_list .borderBottom {
+	border-bottom: 1px solid #bbbcbf;
+}
+
+.chargeDetail_list li div span:nth-child(1){
+	float: left;
+}
+.chargeDetail_list li div span:nth-child(2){
+	float: right;
+}
+.chargeDetail_list li div input {
+	width: 70vw;
+	margin-left: 1em;
+}
+.chargeDetail_list .Remarks{
+	color: #009fe9;
+	height: 3em;
+	line-height: 2.5em;
+	border:none;
+	background-color: #E9EEF1;
+	margin-left: -1em;
+	padding-left: 1em;
+}
+.remarkBox{
+	display: none;
+	margin-bottom: 0.8em;
+}
+.confirm {
+	background-color: #009fe9;
+	width: 92vw;
+	margin: 2.86em auto 0;
+	font-size: 1.17em;
+	line-height: 2.85em;
+	height: 2.85em;
+	color: white;
+	text-align: center;
+	display: block;
+	border-radius: 0.3em;
+}

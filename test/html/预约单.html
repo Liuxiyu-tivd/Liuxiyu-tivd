@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport"
+          content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=1, user-scalable=no"
+          charset="UTF-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/font.css"/>
+    <script src="../js/bridge.js" type="text/javascript"></script>
+    <script src="../js/plugins/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../js/jquery.touch.js" type="text/javascript"></script>
+    <script src="../js/common.js" type="text/javascript"></script>
+    <title>预约单</title>
+</head>
+<body>
+  <p class="content_title">您同时还有<span>3</span>张工单可以一起操作</p>
+<div class="panel">
+    <!-- 输入模板 -->
+    <div class="panel_detail m_top">
+        <div class="item_vessel b_top">
+            <div class="detail_left">联系人</div>
+            <div class="detail_right">
+                <input class="input_name" type="text" value="丁丁"/>
+            </div>
+        </div>
+    </div>
+
+    <!-- 图标模块 -->
+    <div class="panel_detail">
+        <div class="item_vessel b_top">
+            <div class="detail_left">联系电话</div>
+            <div class="detail_right">
+					<span class="icon_vessel icon_click"> <i
+                            class="icon-phone icon"></i>
+					</span> <span class="input_vessel"> <input class="input" type="tel"
+                                                               value="45645456456456"/>
+					</span>
+            </div>
+        </div>
+    </div>
+    <!-- 图标模块2 不加标题  无标题添加一个  &nbsp; -->
+    <div class="panel_detail">
+        <div class="item_vessel b_top">
+            <div class="detail_left">&nbsp;</div>
+            <div class="detail_right">
+					<span class="icon_vessel icon_click"> <i
+                            class="icon-phone icon"></i>
+					</span> <span class="input_vessel"> <input class="input" type="tel"
+                                                               value="010 565656"/>
+					</span>
+            </div>
+        </div>
+    </div>
+    <div class="panel_detail">
+    <div class="item_vessel b_top">
+        <div class="panel_item_ve">
+            <p class="left"><span>图片文件超长标题</span></p >
+            <ul required placeholder="请添加图片文件超长标题" >
+                <li onclick="app.picture(this,'pagefile_5462_stepInfo')">
+                    <span class='icon-add'></span>
+                </li>
+                <i class="right">点击加号添加</i>
+            </ul>
+
+        </div>
+    </div>
+    <!-- 入口模块 -->
+    <!--<div class="panel_detail">
+        <div class="item_vessel b_top">
+            <div class="detail_left">上门地址</div>
+            <div class="detail_right">
+                <span class="icon_vessel_next"> <span
+                    class="icon-iconfont-right"></span>
+                </span> <span class="input_vessel"> <span class="input">北京xxxxxxxx</span>
+                </span>
+            </div>
+        </div>
+    </div>-->
+
+
+    <div class="panel_detail check_show">
+        <div class="item_vessel b_top">
+            <table>
+                <tr>
+                    <td class="td_make_site">上门地址</td>
+                    <td class="td_make_content hint">
+                       <span>
+                           xxxx
+                       </span>
+                        <input type="hidden" onchange="xiugai(this)" id="xxxxx"/>
+                    </td>
+                    <td class="td_make_icon"><i class="icon-iconfont-right"></i></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <!-- 入口模块2 -->
+    <div class="panel_detail check_show m_top">
+        <div class="item_vessel">
+            <div class="detail_left">预约到场时间</div>
+            <div class="detail_right">
+					<span class="icon_vessel_next"> <span
+                            class="icon-iconfont-right"></span>
+					</span> <span class="input_vessel">
+                            <!--<span class="input hint">设定时间</span>-->
+                            <input type="text" placeholder="设定时间" class="input hint" readOnly="true" value=""/>
+					</span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 入口模块3 -->
+    <div class="panel_detail check_show">
+        <div class="item_vessel b_top">
+            <div class="detail_left">事前提醒</div>
+            <div class="detail_right">
+					<span class="icon_vessel_next"> <span
+                            class="icon-iconfont-right"></span>
+					</span> <span class="input_vessel">
+                    <!--<span class="input hint">设置提醒时间</span>-->
+                    <input type="text" placeholder="设置提醒时间" class="input hint" readOnly="true" value=""/>
+                <!-- 赋值后删除 class 'hint'-->
+					</span>
+            </div>
+        </div>
+    </div>
+    <!-- 滑块模块 -->
+    <div class="panel_detail">
+        <div class="item_vessel b_top">
+            <div class="detail_left">是否需要带备件</div>
+            <div class="detail_right">
+                <input type="hidden" id="change_vessel" value="是"/>
+                <div id="check_detail" value="0" class="right_but">
+                    <input type="checkbox" id="change_check"/> <label
+                        class="checkbox_lab" for="change_check"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 录音模块  修正版 -->
+    <div class="evaluate_message m_top">
+        <div class="item_vessel b_top">
+            <div class="message_left">
+                <div class="message_left_title">随手记</div>
+                <div class="message_left_editor">
+                    <textarea class="editor_text" placeholder="填写.."></textarea>
+                </div>
+            </div>
+            <div class="message_right">
+                <div class="icon_border">
+                    <span class="icon-mic"></span>
+                </div>
+            </div>
+        </div>
+        <div class="voice">
+            <div class="panel_voice">
+                <div class="voice_del">
+                    <span class="del_icon icon-delete"></span>
+                </div>
+                <div class="voice_vessel">
+                    <div class="vessel">
+                        <span class="vessel_icon icon-signal"> </span> <span class="text">15</span>
+                    </div>
+                </div>
+            </div>
+            <div class="panel_voice">
+                <div class="voice_del">
+                    <span class="del_icon icon-delete"></span>
+                </div>
+                <div class="voice_vessel">
+                    <div class="vessel">
+                        <span class="vessel_icon icon-signal"> </span> <span class="text">15</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 新增批量预约模块 -->
+    <div class="panel_bottom_title">
+        <img class="choiceImg" ontouchstart="Allselect(this,0)" style="display: none;" src="../img/choice.png"/>
+        <img class="choiceImg" ontouchstart="Allselect(this,1)"  src="../img/no_choice.png"/>
+        <p>全选</p>
+    </div>
+    <div class="order_list">
+        <img class="choiceImg"  ontouchstart="Deselect(this,1)" src="../img/choice.png"/>
+        <img class="choiceImg"  ontouchstart="Deselect(this,0)" style="display: none;" src="../img/no_choice.png"/>
+        <div class="order_desc">
+            <p><strong class="list_title">工单编号：</strong><span>RO-HT-20170401-12</span></p>
+            <p><strong class="list_title">联 系 人：</strong><span>郭旭</span></p>
+            <p><strong class="list_title">上门地址：</strong><span class="addr">郭旭郭旭郭旭郭旭郭旭郭旭郭旭郭旭郭旭郭旭郭旭郭旭郭旭郭旭郭旭郭旭郭旭郭旭郭旭郭旭郭旭郭旭</span></p>
+        </div>
+    </div>
+    <div class="order_list">
+        <img class="choiceImg"  ontouchstart="Deselect(this)" style="display: none;"  src="../img/choice.png"/>
+        <img class="choiceImg"   ontouchstart="Deselect(this)" src="../img/no_choice.png"/>
+        <div class="order_desc">
+            <p><strong class="list_title">工单编号：</strong><span>RO-HT-20170401-12</span></p>
+            <p><strong class="list_title">联 系 人：</strong><span>李先生</span></p>
+            <p><strong class="list_title">上门地址：</strong><span class="addr">西北旺东路10号院</span></p>
+        </div>
+    </div>
+</div>
+
+<div class="maginBottom"></div>
+<div class="bottom_button">
+    <button class="but">
+        <a>确认</a>
+    </button>
+</div>
+
+</body>
+</html>

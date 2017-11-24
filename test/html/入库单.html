@@ -1,0 +1,105 @@
+<!-- 入库单.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport"
+          content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=1, user-scalable=no"
+          charset="UTF-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/font.css"/>
+    <link rel="stylesheet" href="../css/station_in.css"/>
+    
+    <title>入库单</title>
+</head>
+<body>
+	<div class="equipment_box">
+		<div class="equipment_item">
+			<span class="equipment_title">出库类型：</span>
+			<input placeholder="请选择" disabled="disabled" type="text"  />
+			<img class="arrow_bottom" src="../img/arrow_bottom.png" />
+		</div>
+		<div class="equipment_item">
+			<span class="equipment_title">出库仓库：</span>
+			<input placeholder="请选择" disabled="disabled" type="text"  />
+			<img class="arrow_bottom" src="../img/arrow_bottom.png" />
+		</div>
+		<div class="equipment_item">
+			<span class="equipment_title">收货服务站：</span>
+			<input placeholder="请选择" disabled="disabled" type="text"  />
+			<img class="arrow_bottom" src="../img/arrow_bottom.png" />
+		</div>
+		<div class="equipment_item">
+			<span class="equipment_title">出库配件：</span>
+			<input placeholder="" value="5个" disabled="disabled" type="text"  />
+			<span class="add_span">添加配件</span>
+			<img class="add_equipment" src="../img/add_equipment.png" />
+		</div>
+		<ul class="spare_part">
+			<li>
+				<div class="equipment_item">
+					<span class="equipment_title">备件大类：</span>
+					<input class="re_input"  disabled="disabled" value="硬件" placeholder="" type="text"  />
+					<img class="delete" src="../img/delete.png" />
+				</div>
+				<div class="equipment_item">
+					<span class="equipment_title">备件编码：</span>
+					<input class="re_input"  disabled="disabled" value="硬件" placeholder="" type="text"  />
+				</div>
+				<div class="equipment_item">
+					<span class="equipment_title">备件名称：</span>
+					<input class="re_input"  disabled="disabled" value="硬件" placeholder="" type="text"  />
+				</div>
+				<div class="equipment_item">
+					<span class="equipment_title">备件条码：</span>
+					<input class="re_input" placeholder="" value="6970268095107" type="text"  />
+					<img class="scan_btn" src="../img/scan.png" />
+					<span class="change_tips">是否好件</span>
+					<div class="right_but">
+						<input type="checkbox" class="checkbox" id="change_check"/>
+						<label class="checkbox_lab" for="change_check"></label>
+						<!-- <input name="" type="hidden" class="checkbox_value" value=''/> -->            
+			        </div>
+				</div>
+			</li>
+			
+			<li>
+				<div class="equipment_item">
+					<span class="equipment_title">备件大类：</span>
+					<input class="re_input"  disabled="disabled" value="硬件" placeholder="" type="text"  />
+					<img class="delete" src="../img/delete.png" />
+				</div>
+				<div class="equipment_item">
+					<span class="equipment_title">备件编码：</span>
+					<input class="re_input"  disabled="disabled" value="硬件" placeholder="" type="text"  />
+				</div>
+				<div class="equipment_item">
+					<span class="equipment_title">备件名称：</span>
+					<input class="re_input"  disabled="disabled" value="硬件" placeholder="" type="text"  />
+				</div>
+				<div class="equipment_item">
+					<span class="equipment_title">备件条码：</span>
+					<input class="re_input" placeholder="" type="text"  />
+					<img class="scan_btn" src="../img/scan.png" />
+					<span class="change_tips">是否好件</span>
+					<div class="right_but">
+						<input type="checkbox" class="checkbox" id="change_check2"/>
+						<label class="checkbox_lab" for="change_check2"></label>
+						<!-- <input name="" type="hidden" class="checkbox_value" value=''/> -->            
+			        </div>
+				</div>
+			</li>
+			
+		</ul>
+	</div>
+	<div class="bottom_black"></div>
+	<div class="button_box">
+		<button class="confirm">确 定</button>
+	</div>
+</body>
+<script src="../js/bridge.js" type="text/javascript"></script>
+<script src="../js/plugins/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="../js/jquery.touch.js" type="text/javascript"></script>
+<script src="../js/common.js" type="text/javascript"></script>
+<script src="../js/appointment.js" type="text/javascript"></script>
+</html>

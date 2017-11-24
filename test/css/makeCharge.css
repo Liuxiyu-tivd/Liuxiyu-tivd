@@ -1,0 +1,112 @@
+/*makeCharge.css*/
+html,body{
+	background-color: #009fe9;
+}
+.card{
+	border-radius: 0.5em;
+	background-color: white;
+	width: 92vw;
+	margin: 0 auto;
+	margin-top: 1em;
+}
+.card_title {
+	background-color: #f1f1f2;
+	font-size: 1.17em;
+	line-height: 2.86em;
+	padding-left: 2.2em;
+	height: 2.86em;
+	background-image: url(../img/code_charge.png);
+	background-position: 1em center;
+	background-repeat: no-repeat;
+	background-size: 1em 1em;
+	color: #009fe9;
+}
+.card_tips{
+	font-size: 1.17em;
+	color: #758694;
+	text-align: center;
+	width: 100%;
+	line-height: 100%;
+	margin-top: 1.6em;
+	margin-bottom: 1.6em;
+}
+.card_code {
+	width: 13.57em;
+	height: 13.57em;
+	margin: auto;
+	display: block;
+}
+.card_money {
+	font-size: 2.4em;
+	font-weight: bolder;
+	color: #009fe9;
+	margin: 0.9em 0;
+	text-align: center;
+}
+.card_config{
+	width: 30%;
+	margin: 0 auto;
+	margin-bottom: 1.85em;
+	font-size: 1.17em;
+	color: #424769;
+	text-align: center;
+}
+.tab {
+	color: rgba(255,255,255,0.6);
+	margin-top: 1.2em;
+	height: 1.2em;
+	position: relative;
+}
+.tab li {
+	font-size: 1.17em;
+	float: left;
+	font-weight: bolder;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 20vw;
+	text-align: center;
+	cursor: pointer;
+}
+.tab .active {
+	color: white;
+}
+.tab li:nth-child(1){
+	transform:translate(-100%,0);
+}
+.tab img{
+	position: absolute;
+	left: 50%;
+	width: 1px;
+	height: 100%;
+	opacity: 0.6;
+}
+.charge_detail {
+	font-size: 1.17em;
+	line-height: 1.17em;
+	margin-top: 3em;
+	color: white;
+	padding-left: 1em;
+	margin-bottom: 0.67rem
+}
+.chargeDetail_list{
+	background-color: rgba(255,255,255,0.8);
+	padding-left: 1em;
+}
+.chargeDetail_list li {
+	padding-right: 1em;
+	font-size: 1.17em;
+	height: 3.2em;
+	color: #6d6e70;
+	line-height: 3.2em;
+	border-bottom: 1px solid #bbbcbf;
+}
+.chargeDetail_list li:last-child{
+	border-bottom:none;
+}
+.chargeDetail_list li span:nth-child(1){
+	float: left;
+}
+.chargeDetail_list li span:nth-child(2){
+	float: right;
+}

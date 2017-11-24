@@ -1,0 +1,97 @@
+/*appointment.css*/
+.equipment_box{
+	width: 100%;
+	padding: 0 4vw 1em;
+	background-color: white;
+	margin-top: 0.83em;
+}
+.equipment_item{
+	position: relative;
+	line-height: 2.8em;
+	min-height: 2.8em;
+	font-size:1.3em;
+	padding-left: 5.5em;
+	word-break:break-all;
+	text-align: justify;
+	border-bottom: solid 1px #dfe7eb;
+}
+.tips_type{
+	font-size:1.33em;
+	line-height: 2.8em;
+	border-bottom: 1px solid #dfe7eb;
+	padding: 0.3em 0 1em;
+}
+.equipment_title {
+	color: #758694;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform:translate(0,-50%);
+	display: inline-block;
+}
+.type_title{
+	color: #758694;
+	display: block;
+}
+.equipment_desc {
+	color: #000;
+	display: inline-block;
+	padding-right: 4vw;
+	line-height: 1.56em;
+	padding-top: 0.62em;
+	padding-bottom: 0.62em;
+}
+.type_item {
+	position: relative;
+	padding-left: 1.5em;
+	line-height: 2em;
+	margin-left: 2em;
+}
+.remarks {
+	color: #758694;
+	line-height: 2.8em;
+	font-size:1.33em;
+}
+.remarks_input {
+	font-size: 1.33em;
+	border-radius: 0.5em;
+	border: 1px solid #758694;
+	display: block;
+	height: 8.4em;
+	width: 100%;
+	padding:0.5em 1em;
+}
+.change_btn{
+	position: absolute;
+	top: 0.55em;
+	left: 0;
+	width: 1em;
+	height: 1em;
+}
+.confirm {
+	background-color: #009fe9;
+	width: 92vw;
+	font-size: 1.4em;
+	line-height: 2.85em;
+	height: 2.85em;
+	color: white;
+	text-align: center;
+	display: block;
+	border-radius: 0.3em;
+	position: absolute;
+	left: 4vw;
+	top: 50%;
+    transform: translate(0,-50%);
+}
+.bottom_black {
+	width: 100%;
+	background-color: #E9EEF1;
+	height: 5.5em;
+}
+.button_box {
+	position: fixed;
+	bottom: 0;
+	height: 5.4em;
+	width: 100%;
+	background-color: white;
+}

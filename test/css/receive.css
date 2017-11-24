@@ -1,0 +1,86 @@
+/*appointment.css*/
+.equipment_box{
+	width: 100%;
+	padding-left: 4vw;
+	background-color: white;
+	margin-top: 0.83em;
+	margin-bottom: 0.83em;
+
+}
+.equipment{
+	position: relative;
+	line-height: 2.8em;
+	min-height: 2.8em;
+	font-size:1.3em;
+	padding-left: 5.5em;
+	word-break:break-all;
+	text-align: justify;
+	border-bottom: solid 1px #dfe7eb;
+}
+.equipment_box .equipment:last-child {
+	border-bottom: none;
+}
+.equipment_title {
+	color: #758694;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform:translate(0,-50%);
+	display: inline-block;
+}
+.equipment_content {
+	color: #000;
+	display: inline-block;
+	padding-right: 4vw;
+	line-height: 1.56em;
+	padding-top: 0.62em;
+	padding-bottom: 0.62em;
+}
+.scan_btn {
+	position: absolute;
+	width: 1.2em;
+	height: 1.2em;
+	right: 4vw;
+	top: 50%;
+	transform:translate(0,-50%);
+}
+.add_image{
+	width: 3.8em;
+	height: 3.8em;
+	margin:0.25em 0.1em;
+}
+.imgBox {
+	text-align: left;
+	display: inline-block;
+	padding-right: 2vw;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+/*按钮*/
+.confirm {
+	background-color: #009fe9;
+	width: 92vw;
+	font-size: 1.4em;
+	line-height: 2.85em;
+	height: 2.85em;
+	color: white;
+	text-align: center;
+	display: block;
+	border-radius: 0.3em;
+	position: absolute;
+	left: 4vw;
+	top: 50%;
+    transform: translate(0,-50%);
+}
+.bottom_black {
+	width: 100%;
+	background-color: #E9EEF1;
+	height: 5.5em;
+}
+.button_box {
+	position: fixed;
+	bottom: 0;
+	height: 5.4em;
+	width: 100%;
+	background-color: white;
+}

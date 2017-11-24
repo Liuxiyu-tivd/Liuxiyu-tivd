@@ -1,0 +1,117 @@
+/*application_Detail.css*/
+.equipment_box{
+	width: 100%;
+	padding: 1em 4vw ;
+	background-color: white;
+	margin-top: 0.83em;
+}
+.equipment{
+	position: relative;
+	line-height: 1.69em;
+	font-size:1.3em;
+	padding-left: 5.5em;
+	word-break:break-all;
+}
+.equipment_title {
+	color: #758694;
+	position: absolute;
+	left: 0;
+	top: 0%;
+	display: inline-block;
+}
+.equipment_content {
+	color: #000;
+	display: inline-block;
+}
+.tips_type{
+	width: 100%;
+	position: relative;
+	font-size: 1.3em;
+	line-height: 1.69em;
+	height: 1.69em;
+}
+.tips_type span{
+	position: absolute;
+	top: 0;
+	color: #000;
+}
+.tips_type .tips_title{
+	left: 0;
+	color: #758694;
+}
+.tips_type .tips_desc{
+	left: 5.5em;
+}
+.tips_type .tips_money{
+	left: 13em;
+	color: #758694;
+}
+.tips_type .tips_num{
+	left: 16em;
+}
+.Process {
+	height: 2.5em;
+	font-size: 1.33em;
+	line-height: 2.5em;
+	padding:0 4vw;
+	color: #758694;
+}
+.processBox {
+	width: 100%;
+	padding: 0 4vw;
+	background-color: white;
+}
+.process_item {
+	position: relative;
+	min-height: 2.8em;
+	font-size: 1.33em;
+	line-height: 2.8em;
+
+}
+.border_bottom{
+	border-bottom: solid 1px #dfe7eb;
+}
+.process_item .green{
+	color: #70b359;
+}
+.process_item .red{
+	color: #fc0600;
+}
+.process_item img{
+	width: 11px;
+	height: 7px;
+	position: absolute;
+	right: 0;
+	top: 1.2em;
+	
+}
+.marginleft2{
+	margin-left: 2em;
+}
+.advice{
+	position: relative;
+	line-height: 1.69em;
+	font-size:1em;
+	padding-left: 5.5em;
+	word-break:break-all;
+	font-weight: lighter;
+}
+.advice_title {
+	position: absolute;
+	left: 0;
+	top: 0%;
+	display: inline-block;
+}
+.advice_content {
+	color: #000;
+	display: inline-block;
+}
+.project_manager{
+	color: #758694;
+	line-height: 2.8em;
+	font-size:1.33em;
+	width: 100%;
+	padding: 0 4vw;
+	background-color: white;
+	margin-top: 0.7em;
+}

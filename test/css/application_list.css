@@ -1,0 +1,39 @@
+/*application_list.css*/
+.equipment_box{
+	width: 100%;
+	padding: 0 4vw ;
+	background-color: white;
+	margin-top: 0.83em;
+}
+.item {
+	font-size: 1.33em;
+	height: 2.8em;
+	line-height: 2.8em;
+	position: relative;
+	padding-left: 1.5em;
+}
+.item img{
+	width: 1em;
+	height: 1em;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform:translate(0,-50%);
+}
+.item .tips {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+}
+.border_bottom{
+	border-bottom: solid 1px #dfe7eb;
+}
+.add_list{
+	position: fixed;
+	bottom: 2.8em;
+	left: 50%;
+	transform:translate(-50%,0);
+	width: 5.3em;
+	height: 5.3em;
+}

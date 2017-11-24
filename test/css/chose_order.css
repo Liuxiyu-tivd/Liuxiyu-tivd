@@ -1,0 +1,100 @@
+.equipment_box{
+	width: 100%;
+	padding: 1em 4vw;
+	background-color: white;
+	margin-top: 0.83em;
+}
+.equipment{
+	position: relative;
+	line-height: 1.69em;
+	font-size:1.3em;
+	padding-left: 5.5em;
+	word-break:break-all;
+}
+.check_box {
+	position: relative;
+	padding-left: 1.5em;
+}
+.change_btn{
+	position: absolute;
+	top: 0.4em;
+	left: 0;
+	width: 1.3em;
+	height: 1.3em;
+}
+
+.equipment_title {
+	color: #758694;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform:translate(0,-50%);
+	display: inline-block;
+}
+.equipment_content {
+	color: #000;
+	display: inline-block;
+}
+
+.bottom_black {
+	width: 100%;
+	background-color: #E9EEF1;
+	height: 5.5em;
+}
+.button_box {
+	position: fixed;
+	bottom: 0;
+	height: 5.4em;
+	width: 100%;
+	background-color: white;
+}
+.change_up,.change_down {
+	color: #000;
+}
+.change_down {
+	margin-left: 
+	3em;
+}
+/*配件详情-站端 底部两个按钮*/
+.confirm_station1 {
+	background-color: #f1f1f2;
+	width: 29vw;
+	font-size: 1.4em;
+	line-height: 2.85em;
+	height: 2.85em;
+	color: #000;
+	text-align: center;
+	display: block;
+	border-radius: 0.3em;
+	position: absolute;
+	left: 4vw;
+	top: 50%;
+    transform: translate(0,-50%);
+    vertical-align:middle;
+}
+.confirm_station2 {
+	background-color: #009fe9;
+	width: 60vw;
+	font-size: 1.4em;
+	line-height: 2.85em;
+	height: 2.85em;
+	color: white;
+	text-align: center;
+	display: block;
+	border-radius: 0.3em;
+	position: absolute;
+	right: 4vw;
+	top: 50%;
+    transform: translate(0,-50%);
+}
+.all_change_btn {
+	position: absolute;
+	top: 50%;
+	transform:translate(0,-50%);
+	left: 0.8em;
+	width: 1.3em;
+	height: 1.3em;
+}
+.confirm_station1 span{
+	margin-left: 1.3em;
+}

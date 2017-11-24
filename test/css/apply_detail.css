@@ -1,0 +1,182 @@
+/*appointment.css*/
+.server_station {
+	font-size: 1.3em;
+	line-height: 2.2em;
+	padding-left:4vw;
+	font-weight: bolder;
+	color: #758694; 
+}
+.marginTop3{
+	margin-top: 0.83em;
+}
+.equipment_box{
+	width: 100%;
+	padding: 1em 4vw;
+	background-color: white;
+}
+.equipment{
+	position: relative;
+	line-height: 1.69em;
+	font-size:1.3em;
+	padding-left: 5.5em;
+	word-break:break-all;
+}
+.check_box {
+	position: relative;
+	padding-left: 1.5em;
+}
+.change_btn{
+	position: absolute;
+	top: 0.4em;
+	left: 0;
+	width: 1.3em;
+	height: 1.3em;
+}
+.equipment_title {
+	color: #758694;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform:translate(0,-50%);
+	display: inline-block;
+}
+.equipment_content {
+	color: #000;
+	display: inline-block;
+}
+/*配件清单*/
+.equipment_list{
+	background-color: #758694;
+	color: white;
+	font-size: 1.3em;
+	margin-top: 0.875em;
+	line-height: 1.6em;
+	display: inline-block;
+	border-radius: 0.4em 0.4em 0 0;
+	padding: 0.1em 1em;
+}
+.list_box {
+	border: 1px solid #dfe7eb;
+	border-radius:0 0.6em 0.6em 0.6em;
+	font-size: 1.2em;
+	line-height: 2em;
+}
+.list_item {
+	word-break:break-all;
+	padding-left:5em; 
+	min-height: 2em;
+	position: relative;
+}
+.item_title {
+	display: inline-block;
+	color: #758694;
+	margin-left: -5em;
+}
+.item_content{
+	color: #000;
+	display: inline-block;
+}
+.list_box li {
+	padding:0.5em 1em;
+	border-bottom: 1px solid #dfe7eb;
+}
+.list_box li:last-child{
+	border-bottom: none;
+}
+
+.num_control {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 7.14em;
+	border-radius:0.36em; 
+	border: solid 1px #758694;
+}
+.num_control input {
+	display: block;
+	width: 3.57em;
+	height: 100%;
+	position: absolute;
+	left: 1.785em;
+	overflow: hidden;
+	text-align: center;
+	border-left:1px solid #758694;
+	border-right:1px solid #758694;
+}
+.reduce,.add {
+	position: absolute;
+	top: 0;
+	text-align: center;
+	display: block;
+	width: 1.785em;
+	height: 100%;
+	line-height: inherit;
+	color: black;
+	font-weight: 600;
+}
+.reduce {
+	left: 0;
+	color: #758694;
+}
+.add{
+	right: 0;
+}
+.confirm {
+	background-color: #009fe9;
+	width: 92vw;
+	font-size: 1.4em;
+	line-height: 2.85em;
+	height: 2.85em;
+	color: white;
+	text-align: center;
+	display: block;
+	border-radius: 0.3em;
+	position: absolute;
+	left: 4vw;
+	top: 50%;
+    transform: translate(0,-50%);
+}
+.bottom_black {
+	width: 100%;
+	background-color: #E9EEF1;
+	height: 5.5em;
+}
+.button_box {
+	position: fixed;
+	bottom: 0;
+	height: 5.4em;
+	width: 100%;
+	background-color: white;
+}
+/*配件详情-站端 底部两个按钮*/
+.confirm_station1 {
+	background-color: #009fe9;
+	width: 38vw;
+	font-size: 1.4em;
+	line-height: 2.85em;
+	height: 2.85em;
+	color: white;
+	text-align: center;
+	display: block;
+	border-radius: 0.3em;
+	position: absolute;
+	left: 8vw;
+	top: 50%;
+    transform: translate(0,-50%);
+}
+.confirm_station2 {
+	background-color: #009fe9;
+	width: 38vw;
+	font-size: 1.4em;
+	line-height: 2.85em;
+	height: 2.85em;
+	color: white;
+	text-align: center;
+	display: block;
+	border-radius: 0.3em;
+	position: absolute;
+	right: 8vw;
+	top: 50%;
+    transform: translate(0,-50%);
+}
